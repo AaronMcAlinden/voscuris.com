@@ -251,6 +251,7 @@ footer li	{
 	margin-top: 40px;
 	
 	
+	
 }
 
 
@@ -464,18 +465,17 @@ header .button:hover	{
 /*========== ANIMATIONS ============*/
 
 
-/*
-.preload {
-	
-	opacity: 0;
-	
-	-webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-	
-}
-*/
+
+
+
+
+
+
+
+
+
+
+/*-----FLOATING------*/
 
 
 @keyframes float	{
