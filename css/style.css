@@ -224,7 +224,7 @@ footer li	{
 
 
 
-header a	{
+.headline a	{
 	
 	text-transform: uppercase;
 	font-weight: 100;
@@ -783,7 +783,9 @@ header .button:hover	{
 	
 	
 	nav li	{
-		font-size: 1.1em;
+		font-size: 1em;
+		margin: 0 25px;
+		letter-spacing: 2em;
 	}
 	
 	header {
@@ -886,19 +888,80 @@ header .button:hover	{
 }
 	
 	
-	
-	
-	
-	
-	
-	
+
 	
 	
 }
 
 
 
-
+@media only screen and (min-width: 1600px) {
+	
+	
+	header	{
+		height: 900px;
+	}
+	
+	h1	{
+/*		margin-top: 20px;*/
+		font-size: 5.25em;
+	}
+	
+	.headline p	{
+		font-size: 1.5em;
+		padding: 10px 30px;
+		
+	}
+	
+.header_img	{
+	
+	width: 925px;
+/*	margin-right: 50px;*/
+		
+		
+	}
+	
+	.white_back, .grey_back	{
+	padding: 10% 13%;
+		
+	}
+	
+	.text_right , .text_left	{
+		
+		max-width: 675px;
+		
+	}
+	
+	h2{
+		font-size: 3em;
+	}
+	
+	.text_right p , .text_left li	{
+		font-size: 1.5em;
+	}
+	
+	
+	
+	
+	
+	
+	.section1 .text_right	{
+	margin-top: 0%;
+}
+	
+	
+	
+	.text_left	{
+		margin-top: -37.5px;
+	}
+	
+	
+	.section2 img	{
+		max-width: 900px;
+		margin-top: -350px;
+	}
+	
+}
 
 
 
