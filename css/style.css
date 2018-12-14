@@ -112,6 +112,8 @@ h1	{
 }
 
 
+
+
 h2	{
 	
 	font-weight: 100;
@@ -204,12 +206,16 @@ footer li	{
 
 
 
-
+.active_nav	{
+	
+	
+}
 
 
 .inactive	{
 	opacity: .5;
 }
+
 
 
 
@@ -224,7 +230,7 @@ footer li	{
 
 
 
-.headline a	{
+.headline nav a	{
 	
 	text-transform: uppercase;
 	font-weight: 100;
@@ -236,6 +242,11 @@ footer li	{
 	
 }
 
+nav li:hover	{
+	transform: scale(1.1);
+	transition: .3s;
+}
+
 
 
 
@@ -244,8 +255,9 @@ footer li	{
 	width:50%;
 	max-width: 700px;
 	display:inline-block;
+	
 	position: absolute;
-	right: -5%;
+/*	right: -5%;*/
 	transform: translatey(0px);
 	animation: float 2.5s ease-in-out infinite;
 	margin-top: 40px;
@@ -334,28 +346,31 @@ color: #495BFF;
 	
 	background: #F4F8FD;
 	
-	
 }
+
+
 
 .section2	{
 	height: 350px;
 }
 
 
+
 .section2 img	{
-	width: 60%;
+	width: 40%;
 	max-width: 700px;
 	position: absolute;
-	right: -160px;
-	margin-top: -225px
+	right: 0;
+	margin-top: -225px;
 	
 /*
 	margin-right: -30%;
 	display: inline-block;
 */
 	
-	
 }
+
+
 
 .section2	ul	{
 	
@@ -363,9 +378,15 @@ color: #495BFF;
 	line-height: 1.9em;
 	list-style: lower-greek;
 	
-	
-	
 }
+
+
+
+.wrap	{
+	position: relative;
+	overflow-x: hidden;
+}
+
 
 .section2 li	{
 	margin: 0 0 .75em;
@@ -412,6 +433,240 @@ color: #495BFF;
 	
 }
  
+
+
+
+
+/*====SECTORS=====*/
+
+
+
+
+.sectors_header	{
+	height: 700px;
+	text-align: center;
+
+	
+}
+
+
+
+
+.sectors_header nav	{
+	text-align: left;
+}
+
+
+
+
+.sectors_header h1	{
+	margin-top: -90px;
+	text-align: center;
+	margin-top: -100px;
+	
+}
+
+
+.sectors_list 	{
+	
+	margin-top: 120px; 
+	
+	
+}
+
+.sectors_list li	{
+	display: inline-block;
+	margin: 0 145px;
+	
+}
+
+
+
+.sectors_header li img	{
+/*	display: inline-block;*/
+	width: 80px;
+	margin: 0 auto;
+}
+
+
+
+.sectors_header h3	{
+	font-weight: 100;
+	font-size: 1.25em;
+	letter-spacing: .05em;
+	
+}
+
+.sectors_header a	{
+	
+}
+
+
+
+.sectors_list li:hover	{
+	
+	transform: scale(1.1);
+	transition: .3s;
+}
+
+
+/*/=================BODY_CONTENT=================/*/
+
+
+
+
+
+
+
+.sectors_content	{
+	
+	position: relative;
+	height: 3250px
+	
+}
+
+
+
+
+
+.sectors_content .image_block	{
+	
+	position: absolute;
+	max-width: 10px;
+	z-index: -1;
+	margin-left: -10px;
+	margin-top: 175px;
+	
+	
+}
+
+
+.diagnostic_lab .image_block	{
+	
+	left: 0px;
+	
+}
+
+
+.sector_block	{
+	
+	display: block;
+	position: relative;
+	
+}
+
+
+.diagnostic_test	{
+	
+	top: 900px;
+	
+}
+
+
+
+.diagnostic_test .text_block {
+	
+	float: left;
+	margin-left: 8%; 
+	
+}
+
+
+.diagnostic_lab .text_block {
+	
+	margin-right: 8%;
+	
+}
+
+
+
+
+
+
+.diagnostic_test .image_block	{
+	
+	position: absolute;
+	right: 1100px;
+	float: right;
+	
+}
+
+
+
+
+
+
+.text_block	{
+	
+	width: 40%;
+	min-width: 300px;
+	font-weight: 100;
+	font-size: 1.25em;
+	line-height: 1.75em;
+	margin-top: 250px; 
+	z-index: 1;
+
+}
+
+
+
+.text_block p 	{
+	
+	
+	letter-spacing: .02em;
+	width: 90%;
+	
+}
+
+.text_block ul 	{
+	
+	
+	width: 95%;
+	margin: 25px 0;
+}
+
+.text_block li	{
+	padding: 15px 0;
+	
+	
+}
+
+.right_block {
+	
+	float: right;
+	z-index: 2;
+}
+
+
+
+
+.hospital	{
+	
+	top: 900px;
+}
+
+
+
+
+.hospital img	{
+	display: inline;
+	position: absolute;
+	top: 1100px;
+	float: right;
+}
+
+
+
+.hospital .text_block	{
+	margin-right: 8%;
+	margin-top: 525px
+}
+
+
+.sectors_content img	{
+	width: 1150px;
+}
+
 
 /*
 li a p	{
@@ -509,15 +764,158 @@ header .button:hover	{
 /*========== MEDIA QUERIES ============*/
 
 
+
+
+@media only screen and (max-width: 1500px) {
+	
+	
+	.sectors_list	{
+		margin: 110px 0;
+	}
+	
+	
+	.sectors_list li	{
+		
+		margin: 0 120px;
+		font-size: .8em;
+		
+		
+	}
+	
+	.sectors_header li img 	{
+		width: 70px;
+	}
+	
+	
+	
+	
+	
+	
+}
+
+
+
+@media only screen and (max-width: 1240px)	{
+	
+	
+	
+	
+	.text_block	{
+	
+	width: 35%;
+	min-width: 300px;
+	font-weight: 100;
+	font-size: 1.15em;
+	line-height: 1.5em;
+	margin-top: 250px; 
+	z-index: 1;
+
+}
+
+	.sectors_content img	{
+		width: 900px;
+	}
+
+
+	
+	
+	
+	
+	
+
+		
+	.diagnostic_test .image_block	{
+	
+	position: absolute;
+	right: 800px;
+	float: right;
+	
+
+}
+	
+	
+	
+}
+
+
+
+
+
+@media only screen and (max-width: 1220px) {
+	
+	
+	.sectors_list	{
+		margin: 110px 0;
+	}
+	
+	
+	.sectors_list li	{
+		
+		margin: 0 100px;
+		font-size: .8em;
+		
+		
+	}
+	
+
+	
+}
+
+
+
+
+
+@media only screen and (max-width: 1074px) {
+	
+	
+	.sectors_list	{
+		margin: 110px 0;
+	}
+	
+	
+	.sectors_list li	{
+		
+		margin: 0 90px;
+		font-size: .8em;
+		
+		
+	}
+	
+	
+	.text_block	{
+	
+	width: 35%;
+	min-width: 350px;
+	font-weight: 100;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-top: 250px; 
+	z-index: 1;
+
+}
+
+	.sectors_content img	{
+		width: 900px;
+	}
+	
+
+	
+}
+
+
+
+
+
 @media only screen and (max-width: 1024px) {
 	
 	body	{
-		overflow-x: hidden;
+		overflow-x: hidden!important;
 	}
 	
 	
 .header_img	{
 	margin-top: 50px;
+	right: 0;
 		
 	}
 	
@@ -532,8 +930,161 @@ header .button:hover	{
 	
 	
 	
+	.sectors_list	{
+		margin: 110px 0;
+	}
+	
+	
+	.sectors_list li	{
+		
+		margin: 0 80px;
+		font-size: .75em;
+		
+		
+	}
+	
+	.sectors_list li img	{
+		width: 65px;
+	}
+	
+	
+	.sectors_list	{
+		margin: 110px -50px;
+	}
+	
+	
 	
 }
+
+
+
+
+
+@media only screen and (max-width: 1074px) {
+	
+	
+	
+	.text_block	{
+	
+	width: 35%;
+	min-width: 350px;
+	font-weight: 100;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-top: 250px; 
+	z-index: 1;
+
+}
+
+	.sectors_content img	{
+		width: 700px;
+	}
+	
+	
+	.diagnostic_test .image_block	{
+		
+		right: 600px
+	}
+	
+	
+	
+
+	
+}
+
+
+
+@media only screen and (max-width: 840px) {
+	
+	
+	
+	.text_block	{
+	
+	display: block;
+	width: 90%;
+	margin: 00px
+
+}
+
+	.sectors_content img	{
+		width: 700px;
+	}
+	
+	
+	.sectors_content .image_block	{
+		position: relative;
+		margin: 0 auto;
+		width: 100%;
+		display: block;
+	}
+	
+	
+	.diagnostic_test .image_block	{
+		
+		right: 600px;
+		float: none;
+		margin: 0 auto;
+		align-content: center;
+		text-align: center;
+	}
+	
+	
+	
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 789px) {
+	
+	.sectors_list li	{
+		
+		margin: 0 50px;
+		font-size: .7em;
+		
+		
+	}
+	
+	.sectors_list li img	{
+		width: 55px;
+	}
+	
+	
+	
+	
+	
+	@media only screen and (max-width: 525px)	{
+		
+		.sectors_list	{
+			margin-top: 0;
+		}
+		
+		
+		
+		.sectors_list li	{
+			display: block;
+			margin: 15px 0;
+		}
+		
+		
+	}
+
+
+
+
 
 
 
@@ -557,6 +1108,7 @@ header .button:hover	{
 	
 	.header_img	{
 		margin-top: 110px;
+		right: 0;
 	}
 	
 	
@@ -603,6 +1155,7 @@ header .button:hover	{
 	h1	{
 		font-size: 2.25em;
 	}
+	
 
 	.headline	{
 	
@@ -635,6 +1188,7 @@ header .button:hover	{
 	
 
 	.section1	{
+		
 		height: 525px;
 		
 	}
@@ -776,6 +1330,19 @@ header .button:hover	{
 	}
 		
 	}
+
+
+
+
+@media only screen and (max-width: 1280px) {
+	
+	.headline h1	{
+		margin-top: 0px;
+	}
+	
+}
+
+
 
 	
 	
